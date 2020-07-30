@@ -6,148 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="container pt-5">
-        <form class="" role="">
-            <div class="row">
-                <div class="col-md-6 col-xs-12 form-group">
-                    <label for="">Title of Invoice</label>
+    <section>
+        <div class="container pt-5 ">
+            <div class=" bg-primary shadow">
+                <h2 class="text-white text-center"> STEP ONE</h2>
+            </div>
+            <div class="container shadow px-5 pb-5">
 
-                    <input type="text" class="form-control" placeholder="">
-                </div>
-                <div class="form-group">
-                    <div class="dropzone-symbols border text-center"><svg style="height: 100px; width:100px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="image" class=" svg-inline--fa fa-image fa-w-16 fa-2x fa-pull-center " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z"></path></svg><span>+ Logo</span>
+                <form class="pt-5" role="">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 form-group">
+                            <div class="dropzone-symbols  text-left"><img id="image_upload_preview" src="https://res.cloudinary.com/identityseal/image/upload/v1596127378/logoPlaceHolder_lvhnvd.png" style="height: 100px; width:100px;" class="  ">
+                            </div>
+                            <!-- <label for="exampleFormControlFile1">Logo</label> -->
+                            <input type="file" class="mt-3 form-control-file" id="inputFile">
+                        </div>
+
+                        <div class="col-md-6 col-xs-12 form-group ">
+                            <label for="">Title of Invoice</label>
+
+                            <input type="text" class="w-50 form-control" placeholder="">
+                        </div>
                     </div>
-                    <label for="exampleFormControlFile1">Example file input</label>
-                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </form>
+                <div class="row">
+                    <div class="col-lg-6 col-xs-12 mt-5">
+                        <div class="mr-sm-0 mr-md-5">
+                            <h4> From </h4>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Name</label>
+
+                                <input type="text" class="form-control" placeholder="Business Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Email</label>
+
+                                <input type="text" class="form-control" placeholder="name@business.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Address</label>
+
+                                <input type="text" class="form-control" placeholder="Street">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Phone</label>
+
+                                <input type="text" class="form-control" placeholder="(123) 454-4543">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-xs-12 mt-5">
+                        <div class="ml-sm-0 ml-md-5">
+                            <h4> Bill To</h4>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Name</label>
+
+                                <input type="text" class="form-control" placeholder="Client Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Email</label>
+
+                                <input type="text" class="form-control" placeholder="name@business.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Address</label>
+
+                                <input type="text" class="form-control" placeholder="Street">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Phone</label>
+
+                                <input type="text" class="form-control" placeholder="(123) 454-4543">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </form>
-    </div>
-    <section class="address-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-xs-12">
-                    From
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Name</label>
-
-                        <input type="text" class="form-control" placeholder="Business Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Email</label>
-
-                        <input type="text" class="form-control" placeholder="name@business.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Address</label>
-
-                        <input type="text" class="form-control" placeholder="Street">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Phone</label>
-
-                        <input type="text" class="form-control" placeholder="(123) 454-4543">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-xs-12">
-                    Bill To
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Name</label>
-
-                        <input type="text" class="form-control" placeholder="Client Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Email</label>
-
-                        <input type="text" class="form-control" placeholder="name@business.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Address</label>
-
-                        <input type="text" class="form-control" placeholder="Street">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlFile1">Phone</label>
-
-                        <input type="text" class="form-control" placeholder="(123) 454-4543">
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
-    <div class="container">
-        <table class="table table-bordered">
+    <!--  -->
+    <div class="container shadow my-5 py-5">
+        <table class="table">
             <thead>
-                <tr>
-                    <th scope="col"></th>
-                    <th scope="col">DESCRIPTION</th>
-                    <th scope="col">RATE</th>
-                    <th scope="col">HOURS</th>
-                    <th scope="col">AMOUNT</th>
-
+                <tr class="item-row">
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Hours</th>
+                    <th>Total</th>
                 </tr>
             </thead>
-            <tbody id="table-body">
-                <tr id="child">
-                    <td scope="row"> <button onclick="deletingRow(this)" class="btn btn-primary btn-sm">x</button> </td>
-                    <td> <textarea type="text" class="form-control" placeholder=""></textarea>
+            <tbody>
+                <tr id="hiderow">
+                    <td colspan="4">
+                        <a id="addRow" href="javascript:;" title="Add a row" class="btn btn-primary">Add a row</a>
                     </td>
-                    <td> <input type="text" class="form-control" placeholder="23.00">
-                    </td>
-                    <td> <input type="text" class="form-control" placeholder="1">
-                    </td>
-                    <td> 0.00
-                    </td>
-
                 </tr>
-                <!-- <tr>
-                    <th scope="row"> <button class="btn btn-primary btn-sm">x</button> </th>
-                    <td> <input type="text" class="form-control" placeholder="Street">
-                    </td>
-                    <td> <input type="text" class="form-control" placeholder="Street">
-                    </td>
-                    <td> <input type="text" class="form-control" placeholder="Street">
-                    </td>
-                    <td> 0.00
-                    </td>
-
+                <!-- Here should be the item row -->
+                <!--<tr class="item-row">
+                <td><input class="form-control item" placeholder="Item" type="text"></td>
+                <td><input class="form-control price" placeholder="Price" type="text"></td>
+                <td><input class="form-control qty" placeholder="Quantity" type="text"></td>
+                <td><span class="total">0.00</span></td>
+            </tr>-->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right"><strong>Sub Total</strong></td>
+                    <td><span id="subtotal">0.00</span></td>
                 </tr>
                 <tr>
-                    <th scope="row"> <button class="btn btn-primary btn-sm">x</button> </th>
-                    <td> <input type="text" class="form-control" placeholder="Street">
-                    </td>
-                    <td> <input type="text" class="form-control" placeholder="Street">
-                    </td>
-                    <td> <input type="text" class="form-control" placeholder="Street">
-                    </td>
-                    <td> 0.00
-                    </td>
-
+                    <td><strong>Total Hours: </strong><span id="totalQty" style="color: red; font-weight: bold">0</span> hours</td>
+                    <td></td>
+                    <td class="text-right"><strong>Discount</strong></td>
+                    <td><input class="form-control" id="discount" value="0" type="text"></td>
+                </tr>
+                <!-- <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right"><strong>Shipping</strong></td>
+                    <td><input class="form-control" id="shipping" value="0" type="text"></td>
                 </tr> -->
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td class="text-right"><strong>Grand Total</strong></td>
+                    <td><span id="grandTotal">0</span></td>
+                </tr>
             </tbody>
-
         </table>
-        <hr>
 
-        <button id="add" class="btn btn-primary">Add a row</button>
-        <hr>
-        <div class="text-right">
-            <h3>Sub-Total</h3><span></span>
-            <h3>Discount</h3><span></span>
-            <h3>Total</h3><span></span>
-        </div>
-
-        <hr>
-        <h3>Notes</h3>
-        <textarea style="width: 100%;" name="" id="" cols="100" rows="10"></textarea>
 
 
     </div>
+    <div class="container my-5">
+        <hr>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mr-md-5">
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Invoice No</label>
+
+                        <input class="form-control" style="width: 100%;" name="" id="" rows="10" placeholder="Note" />
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Account No</label>
+
+                        <input class="form-control" style="width: 100%;" name="" id="" rows="10" placeholder="Note" />
+
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Date </label>
+
+                        <input class="form-control" style="width: 100%;" name="" id="" rows="10" placeholder="Note" />
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="col-md-6">
+                <div class="pl-md-5">
+                    <div class="form-group">
+                        <h4>Notes</h4>
+                        <textarea class="form-control" style="width: 100%;" name="" id="" rows="10" placeholder="Notes - any relevant information not covered, additional terms and conditions"></textarea>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button type="button" id="" class="btn btn-primary">Create Invoice</button>
+
+        <button type="button" id="" class="btn btn-primary text-right">Preview</button>
+
+    </div>
+    </div>
+
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script>
+        jQuery(document).ready(function() {
+            jQuery().invoice({
+                addRow: "#addRow",
+                delete: ".delete",
+                parentClass: ".item-row",
+
+                price: ".price",
+                qty: ".qty",
+                total: ".total",
+                totalQty: "#totalQty",
+
+                subtotal: "#subtotal",
+                discount: "#discount",
+                // shipping: "#shipping",
+                grandTotal: "#grandTotal"
+            });
+        });
+    </script>
+
     <script src="js/app.js"></script>
 </body>
 
