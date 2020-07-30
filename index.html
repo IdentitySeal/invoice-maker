@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container pt-5">
+        <form class="" role="">
+            <div class="row">
+                <div class="col-md-6 col-xs-12 form-group">
+                    <label for="">Title of Invoice</label>
+
+                    <input type="text" class="form-control" placeholder="">
+                </div>
+                <div class="form-group">
+                    <div class="dropzone-symbols border text-center"><svg style="height: 100px; width:100px;" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="image" class=" svg-inline--fa fa-image fa-w-16 fa-2x fa-pull-center " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M464 448H48c-26.51 0-48-21.49-48-48V112c0-26.51 21.49-48 48-48h416c26.51 0 48 21.49 48 48v288c0 26.51-21.49 48-48 48zM112 120c-30.928 0-56 25.072-56 56s25.072 56 56 56 56-25.072 56-56-25.072-56-56-56zM64 384h384V272l-87.515-87.515c-4.686-4.686-12.284-4.686-16.971 0L208 320l-55.515-55.515c-4.686-4.686-12.284-4.686-16.971 0L64 336v48z"></path></svg><span>+ Logo</span>
+                    </div>
+                    <label for="exampleFormControlFile1">Example file input</label>
+                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                </div>
+            </div>
+        </form>
+    </div>
+    <section class="address-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-xs-12">
+                    From
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Name</label>
+
+                        <input type="text" class="form-control" placeholder="Business Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Email</label>
+
+                        <input type="text" class="form-control" placeholder="name@business.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Address</label>
+
+                        <input type="text" class="form-control" placeholder="Street">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Phone</label>
+
+                        <input type="text" class="form-control" placeholder="(123) 454-4543">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xs-12">
+                    Bill To
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Name</label>
+
+                        <input type="text" class="form-control" placeholder="Client Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Email</label>
+
+                        <input type="text" class="form-control" placeholder="name@business.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Address</label>
+
+                        <input type="text" class="form-control" placeholder="Street">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlFile1">Phone</label>
+
+                        <input type="text" class="form-control" placeholder="(123) 454-4543">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col">DESCRIPTION</th>
+                    <th scope="col">RATE</th>
+                    <th scope="col">HOURS</th>
+                    <th scope="col">AMOUNT</th>
+
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <tr id="child">
+                    <td scope="row"> <button onclick="deletingRow(this)" class="btn btn-primary btn-sm">x</button> </td>
+                    <td> <textarea type="text" class="form-control" placeholder=""></textarea>
+                    </td>
+                    <td> <input type="text" class="form-control" placeholder="23.00">
+                    </td>
+                    <td> <input type="text" class="form-control" placeholder="1">
+                    </td>
+                    <td> 0.00
+                    </td>
+
+                </tr>
+                <!-- <tr>
+                    <th scope="row"> <button class="btn btn-primary btn-sm">x</button> </th>
+                    <td> <input type="text" class="form-control" placeholder="Street">
+                    </td>
+                    <td> <input type="text" class="form-control" placeholder="Street">
+                    </td>
+                    <td> <input type="text" class="form-control" placeholder="Street">
+                    </td>
+                    <td> 0.00
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row"> <button class="btn btn-primary btn-sm">x</button> </th>
+                    <td> <input type="text" class="form-control" placeholder="Street">
+                    </td>
+                    <td> <input type="text" class="form-control" placeholder="Street">
+                    </td>
+                    <td> <input type="text" class="form-control" placeholder="Street">
+                    </td>
+                    <td> 0.00
+                    </td>
+
+                </tr> -->
+            </tbody>
+
+        </table>
+        <hr>
+
+        <button id="add" class="btn btn-primary">Add a row</button>
+        <hr>
+        <div class="text-right">
+            <h3>Sub-Total</h3><span></span>
+            <h3>Discount</h3><span></span>
+            <h3>Total</h3><span></span>
+        </div>
+
+
+
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
