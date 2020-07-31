@@ -133,7 +133,7 @@
                             <tr class="item-row">
                                 <th>Description</th>
                                 <th>Price</th>
-                                <th>Hours</th>
+                                <th>Quantity</th>
                                 <th>Total</th>
                             </tr>
                         </thead>
@@ -146,10 +146,10 @@
                 </tr> -->
                             <tr class="item-row">
                                 <td class="item-name">
-                                    <div class="delete-btn"><input type="text" class="form-control item" placeholder="Item"><a class="delete" href="javascript:;" title="Remove row" style="display: none;">X</a></div>
+                                    <div class="delete-btn"><input type="text" class="form-control item" placeholder="Desc"><a class="delete" href="javascript:;" title="Remove row" style="display: none;">X</a></div>
                                 </td>
-                                <td><input class="form-control price" placeholder="Price" type="text"> </td>
-                                <td><input class="form-control qty" placeholder="Hours" type="text"></td>
+                                <td><input class="form-control price" placeholder="0.00" type="text" value="300"> </td>
+                                <td><input class="form-control qty" placeholder="0" type="text" value="1"></td>
                                 <td><span class="total">0.00</span></td>
                             </tr>
                             <tr id="hiderow">
@@ -171,7 +171,7 @@
                                 <td><span id="subtotal">0.00</span></td>
                             </tr>
                             <tr>
-                                <td><strong>Total Hours: </strong><span id="totalQty" style="color: red; font-weight: bold">0</span> hours</td>
+                                <td><strong>Total Qty: </strong><span id="totalQty" style="color: red; font-weight: bold">0</span> Qty</td>
                                 <td></td>
                                 <td class="text-right"><strong>Tax Percentage %</strong></td>
                                 <td><input class="form-control" id="discount" value="0" type="text"></td>
